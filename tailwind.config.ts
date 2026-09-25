@@ -36,9 +36,14 @@ const config: Config = {
           "70%": { boxShadow: "0 0 0 14px rgba(200,72,31,0)" },
           "100%": { boxShadow: "0 0 0 0 rgba(200,72,31,0)" },
         },
+        marquee: {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(-50%)" },
+        },
       },
       animation: {
         pulseRing: "pulseRing 2.4s infinite",
+        marquee: "marquee 90s linear infinite",
       },
     },
   },

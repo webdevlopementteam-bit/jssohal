@@ -140,9 +140,9 @@ export const COMPANY = {
   name: "J. S. Engineering Company",
   shortName: "J. S. ENGINEERING",
   tagline: "Finest Quality Slicing Solutions Since 1948",
-  phone: "+91 98116 31670",
-  phoneHref: "tel:+919811631670",
-  whatsappHref: "https://wa.me/919811631670",
+  phone: "+91 9811163270 | +91 9811163217",
+  phoneHref: "tel:+919811163270",
+  whatsappHref: "https://wa.me/919811163270",
   address: "C-57, Wazirpur Industrial Area, Delhi - 110052, India",
   location: "Delhi, India",
 };

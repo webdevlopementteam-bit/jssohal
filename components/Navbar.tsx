@@ -46,25 +46,9 @@ export default function Navbar() {
               About Us
             </a>
 
-            <div className="relative group">
               <a className="px-[15px] py-2.5 text-[14.5px] font-semibold text-ink-3 rounded-md hover:text-ember transition-colors flex items-center gap-1.5" href="#products">
-                Products <ChevronDown size={14} className="transition-transform group-hover:rotate-180" />
+                Products 
               </a>
-              <div className="absolute left-1/2 -translate-x-1/2 top-full mt-0 min-w-[720px] bg-white border-t border-black/10 shadow-[0_24px_48px_rgba(21,19,15,0.12)] opacity-0 invisible -translate-y-1.5 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-200 rounded-b-xl overflow-hidden">
-                <div className="grid grid-cols-2 gap-1 p-6">
-                  {megaMenuLinks.map((item) => (
-                    <a
-                      key={item.label}
-                      href={item.href}
-                      className="flex items-center gap-2.5 px-2.5 py-2.5 rounded-lg text-sm font-medium text-ink-3 hover:bg-paper hover:text-ember transition-colors"
-                    >
-                      <span className="w-1.5 h-1.5 rounded-full bg-ember flex-none" />
-                      {item.label}
-                    </a>
-                  ))}
-                </div>
-              </div>
-            </div>
 
             {navLinks.slice(2).map((link) => (
               <a

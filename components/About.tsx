@@ -6,7 +6,7 @@ export default function About() {
   return (
     <section id="about" className="pt-24 pb-24">
       <div className="max-w-content mx-auto px-6 grid grid-cols-1 md:grid-cols-[0.9fr_1.1fr] gap-16 items-center">
-        <Reveal className="relative">
+        <Reveal className="relative hidden md:block">
           <Image
             src="/aboutimage.webp"
             alt="J. S. Engineering Company"
@@ -23,6 +23,13 @@ export default function About() {
           <h2 className="font-display font-extrabold leading-[1.15] tracking-tight text-[28px] sm:text-[34px] lg:text-[40px] my-4">
             Engineering bakery solutions with a legacy of trust
           </h2>
+          <Image
+            src="/aboutimage.webp"
+            alt="J. S. Engineering Company"
+            width={520}
+            height={480}
+            className="md:hidden w-full h-auto rounded-2xl border border-black/10 object-cover mb-6"
+          />
           <div className="space-y-4 text-[15.5px] text-[#4a453e] leading-relaxed">
             <p>
               J. S. Engineering Company traces its manufacturing heritage back to 1948, when
