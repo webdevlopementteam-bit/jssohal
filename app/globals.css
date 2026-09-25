@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
+
+body {
+  background: #f3f1ec;
+  color: #15130f;
+}
+
+::selection {
+  background: #c8481f;
+  color: #fff;
+}
+
+:focus-visible {
+  outline: 2px solid #c8481f;
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+.grid-bg {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.14) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.14) 1px, transparent 1px);
+  background-size: 44px 44px;
+}
+
+.grid-bg-light {
+  background-image: linear-gradient(rgba(21, 19, 15, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(21, 19, 15, 0.08) 1px, transparent 1px);
+  background-size: 44px 44px;
+}
+
+.blade-corner {
+  position: relative;
+}
+.blade-corner::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 26px;
+  height: 26px;
+  background: inherit;
+  clip-path: polygon(100% 0, 0 0, 100% 100%);
+}
+
+.eyebrow::before {
+  content: "";
+  width: 22px;
+  height: 2px;
+  background: currentColor;
+  display: inline-block;
+}
