@@ -65,7 +65,7 @@ export default function Clients() {
                   alt={src.split("/").pop()!.replace(".webp", "").replace(/-2$/, "").replace(/-/g, " ")}
                   width={160}
                   height={80}
-                  className="max-h-full w-auto object-contain"
+                  className="max-h-full w-auto object-cover"
                 />
               </div>
             ))}

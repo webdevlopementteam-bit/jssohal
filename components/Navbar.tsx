@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { Menu, X, ChevronDown, Phone, ArrowRight, Settings } from "lucide-react";
 import { navLinks, megaMenuLinks, COMPANY } from "@/lib/data";
+import Image from "next/image";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -21,39 +22,31 @@ export default function Navbar() {
   return (
     <>
       <header
-        className={`sticky top-0 z-[60] bg-white border-b transition-shadow ${
+        className={`sticky top-0 z-[60] bg-[#C8481F] border-b transition-shadow ${
           scrolled ? "shadow-[0_6px_24px_rgba(21,19,15,0.08)] border-black/10" : "border-transparent"
         }`}
       >
         <div className="max-w-content mx-auto px-6 h-[78px] flex items-center justify-between">
           <a href="#home" className="flex items-center gap-[11px]">
-            <span className="w-[42px] h-[42px] rounded-lg bg-ink flex items-center justify-center flex-none">
-              <Settings size={22} className="stroke-ember" />
-            </span>
-            <span className="leading-tight">
-              <b className="block font-display font-extrabold text-[16.5px] text-ink">J. S. ENGINEERING</b>
-              <span className="hidden xs:block text-[11px] tracking-wide text-steel font-semibold">
-                Sohal JS Engineering Co.
-              </span>
-            </span>
+           <Image src="/logo-js.png" width={200} height={500}/>
           </a>
 
           <nav className="hidden [@media(min-width:1080px)]:flex items-center gap-0.5">
-            <a className="px-[15px] py-2.5 text-[14.5px] font-semibold text-ink-3 rounded-md hover:text-ember transition-colors" href="#home">
+            <a className="px-[15px] py-2.5 text-[14.5px] font-semibold text-white rounded-md hover:text-ember transition-colors" href="#home">
               Home
             </a>
-            <a className="px-[15px] py-2.5 text-[14.5px] font-semibold text-ink-3 rounded-md hover:text-ember transition-colors" href="#about">
+            <a className="px-[15px] py-2.5 text-[14.5px] font-semibold text-white rounded-md hover:text-ember transition-colors" href="#about">
               About Us
             </a>
 
-              <a className="px-[15px] py-2.5 text-[14.5px] font-semibold text-ink-3 rounded-md hover:text-ember transition-colors flex items-center gap-1.5" href="#products">
+              <a className="px-[15px] py-2.5 text-[14.5px] font-semibold text-white rounded-md hover:text-ember transition-colors flex items-center gap-1.5" href="#products">
                 Products 
               </a>
 
             {navLinks.slice(2).map((link) => (
               <a
                 key={link.label}
-                className="px-[15px] py-2.5 text-[14.5px] font-semibold text-ink-3 rounded-md hover:text-ember transition-colors"
+                className="px-[15px] py-2.5 text-[14.5px] font-semibold text-white rounded-md hover:text-ember transition-colors"
                 href={link.href}
               >
                 {link.label}
@@ -65,13 +58,13 @@ export default function Navbar() {
             <a
               href={COMPANY.phoneHref}
               aria-label="Call us"
-              className="hidden sm:flex w-[42px] h-[42px] rounded-md border border-black/10 items-center justify-center hover:border-ember hover:text-ember transition-colors flex-none"
+              className="hidden sm:flex w-[42px] h-[42px] rounded-md border border-white items-center text-white justify-center hover:border-white hover:text-ember hover:bg-white transition-colors flex-none"
             >
               <Phone size={18} />
             </a>
             <a
               href="#contact"
-              className="hidden [@media(min-width:1080px)]:inline-flex items-center gap-2.5 bg-ember hover:bg-ember-dark text-white font-semibold text-[15px] px-6 py-3.5 rounded-md transition-colors group"
+              className="hidden [@media(min-width:1080px)]:inline-flex items-center gap-2.5 bg-white hover:bg-ember-dark text-ember hover:text-white font-semibold text-[15px] px-6 py-3.5 rounded-md transition-colors group"
             >
               GET A QUOTE
               <ArrowRight size={16} className="transition-transform group-hover:translate-x-1" />
@@ -79,7 +72,7 @@ export default function Navbar() {
             <button
               onClick={() => setMobileOpen(true)}
               aria-label="Open menu"
-              className="[@media(min-width:1080px)]:hidden flex w-[42px] h-[42px] rounded-md border border-black/10 items-center justify-center"
+              className="[@media(min-width:1080px)]:hidden flex w-[42px] h-[42px] rounded-md border border-white text-white items-center justify-center"
             >
               <Menu size={20} />
             </button>
