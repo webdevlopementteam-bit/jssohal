@@ -19,6 +19,9 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
+  verification: {
+    google: "r7Wt-Vm5MAVAsrfxVQ86BGmxmGHnDCrzSEZYB7UOXBQ",
+  },
   title: "J. S. Engineering | Bread Slicing & Bakery Machinery Manufacturer",
   description:
     "J. S. Engineering manufactures high-speed bread slicing machines, toast slicers, cake slicing machines, gravity slicers and bakery equipment in India.",
