@@ -63,9 +63,9 @@ export default function Counters() {
         className="bg-white rounded-2xl shadow-[0_26px_60px_rgba(21,19,15,0.16)] border border-black/10 grid grid-cols-2 sm:grid-cols-5"
       >
         <CounterItem target={1948} start={1900} label="Established" inView={inView} />
-        <CounterItem target={75} suffix="+" label="Years of Engineering Legacy" inView={inView} />
-        <CounterItem target={65} label="Breads / Minute" inView={inView} />
-        <CounterItem target={30} suffix="+" label="Years Supplying Leading Bakery Brands" inView={inView} />
+        <CounterItem target={75} suffix="+" label="Years of Legacy" inView={inView} />
+        <CounterItem target={95} suffix="%" label="Satisfied Customers" inView={inView} />
+        <CounterItem target={5000} suffix="+" label="Machines delivered" inView={inView} />
         <div className="p-8 text-center border-t sm:border-t-0 border-black/10 col-span-2 sm:col-span-1">
           <div className="font-display font-extrabold text-xl text-ink">Multiple</div>
           <div className="text-[12.5px] text-steel mt-1.5 font-semibold leading-snug">Countries Served</div>

@@ -20,9 +20,9 @@ export default function About() {
           <span className="eyebrow inline-flex items-center gap-2.5 text-[12.5px] tracking-[0.14em] font-semibold text-ember">
             ABOUT J. S. ENGINEERING
           </span>
-          <h2 className="font-display font-extrabold leading-[1.15] tracking-tight text-[28px] sm:text-[34px] lg:text-[40px] my-4">
-            Engineering bakery solutions with a legacy of trust
-          </h2>
+          <h1 className="font-display font-extrabold leading-[1.15] tracking-tight text-[28px] sm:text-[34px] lg:text-[40px] my-4">
+            Bakery Machine Manufacturer in Delhi | J. S. Engineering
+          </h1>
           <Image
             src="/aboutimage.webp"
             alt="J. S. Engineering Company"
@@ -32,16 +32,17 @@ export default function About() {
           />
           <div className="space-y-4 text-[15.5px] text-[#4a453e] leading-relaxed">
             <p>
-              J. S. Engineering Company traces its manufacturing heritage back to 1948, when
-              founder S. Jaswant Singh Sohal began building bakery machinery in Delhi. The
-              company specializes in high-speed bread, toast and cake slicing machines, along
-              with a wider range of bakery equipment and turnkey bakery solutions.
+              Every baker has a story about a machine that gave up at the worst possible moment. The
+              slicer jams during the morning rush. The slices come out thick on one side and thin on
+              the other. A normal shift suddenly turns into a very long one. We&apos;ve heard versions
+              of this story for decades, and it&apos;s the reason we build machines the way we do.
             </p>
             <p>
-              Over three generations, the family has carried forward an engineering discipline
-              built on quality materials, experienced engineers and machines designed around
-              real production needs — for customers across India&apos;s domestic bakery industry
-              and export markets abroad.
+              J. S. Engineering is a bakery machine manufacturer in Delhi. Since 1948, we&apos;ve been
+              making bread slicing machines, toast slicers, cake slicing machines and other bakery
+              equipment from our workshop in Wazirpur Industrial Area. Some of our customers run a
+              single neighbourhood bakery. Others run large industrial plants. Both get machines built
+              around how they actually work, not around what&apos;s easiest for us to make.
             </p>
           </div>
           <div className="border-l-[3px] border-ember bg-paper-2 rounded-r-lg px-5 py-4 my-6 text-[15px] font-medium text-ink-3">

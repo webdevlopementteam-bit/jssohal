@@ -1,36 +1,31 @@
-import { Award, Zap, Target, ShieldCheck, Sparkles, Wrench } from "lucide-react";
+import { Target, ShieldCheck, Sparkles, Wrench, MessageCircle } from "lucide-react";
 import Reveal from "./Reveal";
 
 const items = [
   {
-    icon: Award,
-    title: "Decades of Engineering Experience",
-    desc: "Three generations of manufacturing knowledge, applied to every machine we build.",
-  },
-  {
-    icon: Zap,
-    title: "High-Performance Machines",
-    desc: "Engineered for efficient, dependable operation at consistent industrial output.",
-  },
-  {
     icon: Target,
-    title: "Precision Cutting",
-    desc: "Accurate slicing thickness with blades set to exact tolerances for every product.",
+    title: "Even slices",
+    desc: "our blades are set to exact tolerances, so the first slice and the thousandth look the same.",
   },
   {
     icon: ShieldCheck,
-    title: "Durable Construction",
-    desc: "Built from quality materials for long service life under continuous industrial use.",
+    title: "A strong build",
+    desc: "we use quality steel, because a machine that runs all day needs to handle it.",
   },
   {
     icon: Sparkles,
-    title: "Low Maintenance",
-    desc: "Easily replaceable blades and simple, soundless operation reduce downtime.",
+    title: "Easy upkeep",
+    desc: "blades are simple to replace, and the machines run quietly, so you spend less time waiting on repairs.",
   },
   {
     icon: Wrench,
-    title: "Customized Solutions",
-    desc: "Machinery configured around each bakery's product, capacity and layout requirements.",
+    title: "Made for your product",
+    desc: "your loaf size, your product and your daily volume decide the setup.",
+  },
+  {
+    icon: MessageCircle,
+    title: "Straight answers",
+    desc: "you talk to the people who build the machine, not a middleman who's reading from a brochure.",
   },
 ];
 
@@ -43,14 +38,20 @@ export default function WhyChooseUs() {
             WHY CHOOSE US
           </span>
           <h2 className="font-display font-extrabold leading-[1.14] tracking-tight text-[28px] sm:text-[34px] lg:text-[40px] my-4">
-            Why bakeries choose J. S. Engineering
+            Why Bakers Stick With Us
           </h2>
+          <p className="text-[15.5px] text-[#5b564d] leading-relaxed">
+            Every manufacturer says their machines are good. Here&apos;s what we actually focus on.
+          </p>
         </Reveal>
 
         <Reveal>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-black/10 border border-black/10 rounded-2xl overflow-hidden">
-            {items.map((item) => (
-              <div key={item.title} className="bg-white p-7">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-px bg-black/10 border border-black/10 rounded-2xl overflow-hidden">
+            {items.map((item, i) => (
+              <div
+                key={item.title}
+                className={`bg-white p-7 ${i === items.length - 1 ? "sm:col-span-2 lg:col-span-1" : ""}`}
+              >
                 <div className="w-[46px] h-[46px] rounded-lg bg-paper-2 flex items-center justify-center mb-4.5">
                   <item.icon size={22} className="text-ember" />
                 </div>

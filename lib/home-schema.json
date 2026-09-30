@@ -1,0 +1,151 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://bakerymachinemanufacturer.com/#organization",
+      "name": "J. S. Engineering",
+      "alternateName": "J. S. Engineering Company",
+      "description": "J. S. Engineering is a bakery machine manufacturer in Delhi, established in 1948, making high-speed bread slicing machines, toast slicers, cake slicing machines and bakery equipment.",
+      "url": "https://bakerymachinemanufacturer.com/",
+      "logo": "https://bakerymachinemanufacturer.com/logo-js.png",
+      "image": "https://bakerymachinemanufacturer.com/desktopbanner.jpeg",
+      "telephone": "+919811163270",
+      "foundingDate": "1948",
+      "founder": {
+        "@type": "Person",
+        "name": "S. Jaswant Singh Sohal"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "C-57, Wazirpur Industrial Area",
+        "addressLocality": "Delhi",
+        "addressRegion": "Delhi",
+        "postalCode": "110052",
+        "addressCountry": "IN"
+      },
+      "areaServed": [
+        { "@type": "City", "name": "Delhi" },
+        { "@type": "Country", "name": "India" }
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+919811163270",
+        "contactType": "sales",
+        "areaServed": "IN",
+        "availableLanguage": ["English", "Hindi"]
+      },
+      "knowsAbout": [
+        "Bakery machine manufacturer",
+        "Bakery machine manufacturer in Delhi",
+        "Bread slicing machine",
+        "Toast slicing machine",
+        "Cake slicing machine",
+        "Bakery equipment"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Bakery Machinery",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "High Speed Bread Slicer" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "High Speed Toast Slicer" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Gravity Bread Slicer" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Cake Slicing Machine" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Round Roll Slicing Machine" } }
+        ]
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://bakerymachinemanufacturer.com/#website",
+      "url": "https://bakerymachinemanufacturer.com/",
+      "name": "J. S. Engineering | Bakery Machine Manufacturer in Delhi",
+      "publisher": { "@id": "https://bakerymachinemanufacturer.com/#organization" }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Who is the best bakery machine manufacturer in Delhi?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "J. S. Engineering is one of the most experienced bakery machine manufacturers in Delhi. We've been building bakery machinery since 1948 from Wazirpur Industrial Area, and we supply bakeries across India and abroad."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where can I buy a bread slicing machine in Delhi?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You can buy directly from us at J. S. Engineering, C-57, Wazirpur Industrial Area, Delhi 110052. Tell us about your bakery, and we'll suggest the right machine and send you a quotation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does a bakery machine manufacturer do?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A bakery machine manufacturer designs and builds the equipment bakeries use every day, such as slicers, mixers, ovens and dough dividers. At J. S. Engineering, we also customize machines and help new bakeries plan their production lines."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is a bread slicing machine and how does it work?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A bread slicing machine cuts a loaf into even slices using precisely set blades. The bread goes in either automatically or by gravity feed, and the blades cut it to a fixed thickness. It saves time, cuts down wastage and keeps every slice uniform."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does a bread slicing machine cost in India?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It depends on the capacity, the model, the blade setup and whether you choose stainless steel. A gravity slicer and a high-speed automatic machine are priced very differently. Share your requirements with us and we'll give you an exact quotation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the capacity of a high-speed bread slicer?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Our high-speed bread slicers can slice up to 65 breads per minute. The exact output depends on the model, loaf size and configuration, so we recommend a machine based on your daily production target."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which machine is best for slicing toast bread?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A high-speed toast slicing machine is the best choice, because it keeps the thickness even on every slice. We make toast slicers, including stainless steel models, and round roll slicers for buns."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I choose the right bakery machine for my bakery?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Start with four questions. How many breads do you produce per minute or per day? What are your loaf size and type? How much floor space do you have? Do you need automatic or gravity feed? Our team can help you decide based on your answers."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can a bakery machine manufacturer in Delhi supply machines outside India?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. J. S. Engineering supplies bakery machinery across India and exports to international customers as well. Share your location and requirements, and we'll guide you on the next steps."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How can I get a quotation or set up a new bakery plant?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Use the Get a Quote button on our website and tell us what you need. We also offer project consultancy, covering machinery selection, layout planning and turnkey support for bread, cake and toast production lines."
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Manrope, Inter } from "next/font/google";
 import "./globals.css";
+import { SITE_URL } from "@/lib/data";
 
 const manrope = Manrope({
   subsets: ["latin"],
@@ -17,6 +18,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
   title: "J. S. Engineering | Bread Slicing & Bakery Machinery Manufacturer",
   description:
     "J. S. Engineering manufactures high-speed bread slicing machines, toast slicers, cake slicing machines, gravity slicers and bakery equipment in India.",

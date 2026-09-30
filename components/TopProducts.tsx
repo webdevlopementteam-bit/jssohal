@@ -2,6 +2,21 @@ import Image from "next/image";
 import Reveal from "./Reveal";
 import { topProducts, COMPANY } from "@/lib/data";
 
+const range = [
+  {
+    name: "High Speed Bread Slicing Machine",
+    text: "built for continuous production. Depending on the model and configuration, it can slice up to 65 breads a minute.",
+  },
+  { name: "High Speed Toast Slicing Machine", text: "keeps toast thickness even, batch after batch." },
+  { name: "Gravity Bread Slicer", text: "a simple, dependable option for bakeries with limited space." },
+  { name: "Cake Slicing Machine", text: "cuts cake bars and slabs cleanly, without crushing or tearing them." },
+  { name: "Round Roll Slicing Machine", text: "made specially for buns and round rolls." },
+  {
+    name: "Other Bakery Equipment",
+    text: "spiral and planetary mixers, rotary ovens, dough dividers and moulders.",
+  },
+];
+
 function WhatsAppIcon() {
   return (
     <svg viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4">
@@ -68,6 +83,32 @@ export default function TopProducts() {
             </Reveal>
           ))}
         </div>
+
+        <Reveal className="max-w-[900px] mx-auto mt-20">
+          <h2 className="font-display font-extrabold leading-[1.15] tracking-tight text-[24px] sm:text-[28px] lg:text-[32px] mb-4">
+            What We Make
+          </h2>
+          <div className="space-y-4 text-[15.5px] text-[#4a453e] leading-relaxed">
+            <p>
+              Our range covers most of what a bakery needs on the slicing side, plus some of the heavy
+              equipment too.
+            </p>
+            <ul className="grid sm:grid-cols-2 gap-3">
+              {range.map((item) => (
+                <li key={item.name} className="flex items-start gap-3 bg-white border border-black/10 rounded-md px-4 py-3.5">
+                  <span className="mt-[9px] w-1.5 h-1.5 rounded-full bg-ember flex-none" />
+                  <span>
+                    <b className="font-display font-bold text-ink">{item.name}:</b> {item.text}
+                  </span>
+                </li>
+              ))}
+            </ul>
+            <p>
+              Some models come in stainless steel too, which is easier to keep hygienic and lasts
+              longer with daily use.
+            </p>
+          </div>
+        </Reveal>
       </div>
     </section>
   );
