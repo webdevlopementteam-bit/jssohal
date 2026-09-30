@@ -28,7 +28,7 @@ export default function Navbar() {
       >
         <div className="max-w-content mx-auto px-6 h-[78px] flex items-center justify-between">
           <a href="#home" className="flex items-center gap-[11px]">
-           <Image src="/logo-js.png" width={200} height={500}/>
+           <Image src="/logo-js.png" alt="J. S. Engineering" width={200} height={500}/>
           </a>
 
           <nav className="hidden [@media(min-width:1080px)]:flex items-center gap-0.5">
