@@ -3,17 +3,31 @@
 import { useState, FormEvent } from "react";
 import { MapPin, Phone, Mail, Facebook, Youtube, Linkedin } from "lucide-react";
 import { COMPANY } from "@/lib/data";
+import { submitToWeb3Forms } from "@/lib/web3forms";
 
 export default function Footer() {
   const [sent, setSent] = useState(false);
+  const [sending, setSending] = useState(false);
+  const [error, setError] = useState("");
 
-  function handleSubmit(e: FormEvent) {
+  async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    setSent(true);
+    const email = String(new FormData(e.currentTarget).get("email") ?? "");
+    setSending(true);
+    setError("");
+    const result = await submitToWeb3Forms({
+      subject: "New callback request — Website footer",
+      from_name: "J. S. Engineering Website",
+      email,
+      message: "Callback request submitted from the website footer.",
+    });
+    setSending(false);
+    if (result.success) setSent(true);
+    else setError(result.message || "Could not send. Please try again.");
   }
 
   return (
-    <footer id="contact" className="bg-[#0f0d0a] text-[#a49d92] pt-[70px]">
+    <footer className="bg-[#0f0d0a] text-[#a49d92] pt-[70px]">
       <div className="max-w-content mx-auto px-6">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1.2fr] gap-10 pb-[50px] border-b border-white/10">
           <div>
@@ -77,18 +91,21 @@ export default function Footer() {
               <form onSubmit={handleSubmit} className="flex gap-2">
                 <input
                   type="email"
+                  name="email"
                   required
                   placeholder="Your email"
                   className="flex-1 min-w-0 bg-white/[.06] border border-white/[.14] rounded-md px-3 py-2.5 text-white text-[13px] placeholder:text-[#7d766b]"
                 />
                 <button
                   type="submit"
-                  className="bg-ember hover:bg-ember-dark text-white text-sm font-semibold px-4 py-2.5 rounded-md transition-colors"
+                  disabled={sending}
+                  className="bg-ember hover:bg-ember-dark disabled:opacity-70 text-white text-sm font-semibold px-4 py-2.5 rounded-md transition-colors"
                 >
-                  Send
+                  {sending ? "..." : "Send"}
                 </button>
               </form>
             )}
+            {error && <p className="text-[12.5px] text-red-400 mt-2">{error}</p>}
           </div>
         </div>
 

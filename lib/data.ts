@@ -148,3 +148,6 @@ export const COMPANY = {
 };
 
 export const SITE_URL = "https://bakerymachinemanufacturer.com";
+
+// Web3Forms keys are public by design; submissions go to the email tied to this key.
+export const WEB3FORMS_ACCESS_KEY = "c3c42454-5713-4551-a131-34dec2597d6f";

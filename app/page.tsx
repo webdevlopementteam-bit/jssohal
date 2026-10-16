@@ -14,6 +14,7 @@ import Testimonials from "@/components/Testimonials";
 import FAQ from "@/components/FAQ";
 import Clients from "@/components/Clients";
 import CTA from "@/components/CTA";
+import ContactForm from "@/components/ContactForm";
 import Footer from "@/components/Footer";
 import Floaters from "@/components/Floaters";
 import homeSchema from "@/lib/home-schema.json";
@@ -56,6 +57,7 @@ export default function Home() {
       <FAQ />
       <Clients />
       <CTA />
+      <ContactForm />
       <Footer />
       <Floaters />
     </>
