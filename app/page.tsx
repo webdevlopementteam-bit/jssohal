@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   description,
   keywords: ["bakery machine manufacturer", "bakery machine manufacturer in Delhi"],
   alternates: { canonical: "/" },
-  openGraph: { title, description, type: "website", url: "/" },
+  openGraph: { title, description, type: "website", url: "/", siteName: "Js Sohal" },
 };
 
 export default function Home() {

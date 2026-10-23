@@ -32,21 +32,21 @@ export default function Navbar() {
           </a>
 
           <nav className="hidden [@media(min-width:1080px)]:flex items-center gap-0.5">
-            <a className="px-[15px] py-2.5 text-[14.5px] font-semibold text-white rounded-md hover:text-ember transition-colors" href="#home">
+            <a className="px-[15px] py-2.5 text-[14.5px] font-semibold text-white rounded-md hover:bg-white/15 transition-colors" href="#home">
               Home
             </a>
-            <a className="px-[15px] py-2.5 text-[14.5px] font-semibold text-white rounded-md hover:text-ember transition-colors" href="#about">
+            <a className="px-[15px] py-2.5 text-[14.5px] font-semibold text-white rounded-md hover:bg-white/15 transition-colors" href="#about">
               About Us
             </a>
 
-              <a className="px-[15px] py-2.5 text-[14.5px] font-semibold text-white rounded-md hover:text-ember transition-colors flex items-center gap-1.5" href="#products">
+              <a className="px-[15px] py-2.5 text-[14.5px] font-semibold text-white rounded-md hover:bg-white/15 transition-colors flex items-center gap-1.5" href="#products">
                 Products 
               </a>
 
             {navLinks.slice(2).map((link) => (
               <a
                 key={link.label}
-                className="px-[15px] py-2.5 text-[14.5px] font-semibold text-white rounded-md hover:text-ember transition-colors"
+                className="px-[15px] py-2.5 text-[14.5px] font-semibold text-white rounded-md hover:bg-white/15 transition-colors"
                 href={link.href}
               >
                 {link.label}

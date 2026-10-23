@@ -42,6 +42,7 @@ export const metadata: Metadata = {
     description:
       "High-speed bread, toast and cake slicing machines and bakery equipment, engineered in Delhi, India since 1948.",
     type: "website",
+    siteName: "Js Sohal",
   },
 };
 
